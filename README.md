@@ -1,5 +1,5 @@
 # RiboFACSeq: Data Analysis Pipeline
-RiboFACSeq is a method for elucidating target-specific transport and biosynthetic pathways in bacterial cells by combining a riboswitch-based sensor (i.e. a functional nucleic acid based sensor which is responsive to the target metabolite), a library of randomly mutagenized *E. coli* cells, fluorescence-activated cell sorting (FACS) and next-generation sequencing (NGS). Overall, the data analysis pipeline inspects the number of each single-gene mutant within each sample/batch before and after FACS, as a means of elucidating the genes that are very likely to be involved in the transport and biosynthesis of the target metabolite in cells.
+RiboFACSeq is a method for elucidating target-specific transport and biosynthetic pathways in bacterial cells by combining a riboswitch-based sensor (i.e. a functional nucleic acid based sensor which is responsive to the target metabolite), a library of randomly mutagenized *E. coli* cells, fluorescence-activated cell sorting (FACS) and next-generation sequencing (NGS). Overall, this bioinformatics pipeline inspects the number of each single-gene mutant within each sample/batch before and after FACS, as a means of elucidating the genes that are very likely to be involved in the transport and biosynthesis of the target metabolite in cells.
 
 ## Getting Started
 
