@@ -1,9 +1,40 @@
-# RiboFACSeq: Data Analysis Pipeline
-RiboFACSeq is a method for elucidating target-specific transport and biosynthetic pathways in bacterial cells by combining a riboswitch-based sensor (i.e. a functional nucleic acid based sensor which is responsive to the target metabolite), a library of randomly mutagenized *E. coli* cells, fluorescence-activated cell sorting (FACS) and next-generation sequencing (NGS). Overall, this bioinformatics pipeline inspects the number of each single-gene mutant within each sample/batch before and after FACS, as a means of elucidating the genes that are very likely to be involved in the transport and biosynthesis of the target metabolite in cells.
+# RiboFACSeq: A new method for investigating metabolic and transport pathways in bacterial cells by combining a riboswitch-based sensor, fluorescence-activated cell sorting and next-generation sequencing
+
+The elucidation of the cellular processes involved in vitamin and cofactor biosynthesis is a challenging task. In life sciences, 
+the conventional approaches to these investigations rely on the discovery and purification of the products (i.e proteins and metabolites) 
+of a particular transport or biosynthetic pathway. However, the purification of low-abundance proteins or metabolites is a formidable undertaking 
+that presents considerable technical challenges. As a solution, we present an alternative approach to such studies that circumvents the purification step. 
+
+The proposed approach takes advantage of: 
+1. The molecular detection capabilities of a **riboswitch-based sensor** to detect the cellular levels of its cognate molecule, as a means to probe the integrity of the transport and biosynthetic pathways of the target molecule in cells; 
+2. The high-throughput screening ability of **fluorescence-activated cell sorters** to isolate cells in which only these specific pathways are disrupted, and; 
+3. The ability of **next-generation sequencing** to quickly identify the genes of the FACS-sorted populations. 
+
+This approach was named [**RiboFACSeq**](https://www.ncbi.nlm.nih.gov/pubmed/29211762).
+
+As a **proof-of-concept**, an adenosylcobalamin (AdoCbl)-responsive riboswitch-based sensor was used in this study to demonstrate that RiboFACSeq 
+can be used to **track** and **sort** cells carrying genetic mutations in __known__ AdoCbl transport and biosynthesis genes with desirable sensitivity and specificity.
+
+## Motivation
+
+As specified in the [publication](https://www.ncbi.nlm.nih.gov/pubmed/29211762), we assessed the recovery of AdoCbl-specific mutants from
+spiked samples containing known mixtures of them (i.e. ΔbtuB, ΔcobC, ΔcobU, ΔcobS, ΔcobT and ΔexbB), an unrelated mutant (ΔcarB) and WT cells.
+To track the various cell-types, each of these strains were genetically modified by the incorporation of a unique 9-nucleotide "barcode", as follows: 
+ 
+1. WT:'ATGTGTGTA'
+2. __ΔbtuB__:'ATGGCTTGT'
+3. __ΔcobC__:'ATGATCTGT'
+4. __ΔcobU__:'ATGCTGTGT'
+5. __ΔcobS__:'ATGTTCTGT'
+6. __ΔcobT__:'ATGCCTTGT'
+7. __ΔexbB__:'ATGGTATGT' 
+8. __ΔcarB__:'ATGTGTTGT'
+
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
 
 ### Prerequisites
 
@@ -51,29 +82,9 @@ Explain what these tests test and why
 Give an example
 ```
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
 ## Authors
 
-* **Zohaib Ghazi** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Zohaib Ghazi** - [ZohaibGhazi](https://github.com/Zohaib-Ghazi)
 
 ## License
 
